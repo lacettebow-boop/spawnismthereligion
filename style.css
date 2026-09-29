@@ -226,23 +226,19 @@ a:focus-visible { outline: 2px dotted var(--accent); outline-offset: 3px; }
   body {
     padding: 10px;
   }
-
   .layout {
     grid-template-columns: 190px minmax(0, 1fr) 205px;
     grid-template-areas: "left main right";
     padding: 12px;
     gap: var(--column-gap);
   }
-
   .left-sidebar,
   .right-sidebar {
     display: block;
   }
-
   .site-title {
     font-size: clamp(2.2rem, 7vw, 3.5rem);
   }
-
   .article-card {
     padding: 15px 16px 17px;
   }
