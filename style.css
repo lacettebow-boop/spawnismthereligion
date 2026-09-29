@@ -223,19 +223,29 @@ a:focus-visible { outline: 2px dotted var(--accent); outline-offset: 3px; }
 .site-footer p { margin: 3px 0; }
 
 @media (max-width: 860px) {
-  body { padding: 10px; }
+  body {
+    padding: 10px;
+  }
+
   .layout {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "main" "left" "right";
+    grid-template-columns: 190px minmax(0, 1fr) 205px;
+    grid-template-areas: "left main right";
     padding: 12px;
+    gap: var(--column-gap);
   }
-  .left-sidebar, .right-sidebar {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: start;
-    gap: 10px;
+
+  .left-sidebar,
+  .right-sidebar {
+    display: block;
   }
-  .panel { margin: 0; }
+
+  .site-title {
+    font-size: clamp(2.2rem, 7vw, 3.5rem);
+  }
+
+  .article-card {
+    padding: 15px 16px 17px;
+  }
 }
 
 @media (max-width: 540px) {
