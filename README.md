@@ -1,29 +1,35 @@
-# Spawnism Neocities starter site
+# Spawnism Archive
 
-## Files
+A small, personal website about Spawnism, with a lunar, old-web encyclopedia feel. The site introduces Spawnism as centered around reincarnation and rebirth, and leaves room for carefully sourced additions.
 
-- `index.html` — compact overview homepage
-- `beliefs.html` — beliefs and interpretation placeholders
-- `practices.html` — attributed practices and observances
-- `history.html` — sourced history placeholders
-- `faq.html` — short questions and answers
-- `symbols.html` — image slot and symbol attribution notes
-- `glossary.html` — starter terms
-- `sources.html` — clickable source list and attribution guide
-- `style.css` — shared layout, colors, typography, and responsive styling
+## Pages
 
-## Publish to Neocities
+- `index.html` — overview
+- `beliefs.html` — beliefs and interpretations
+- `practices.html` — practices and observances
+- `history.html` — history
+- `faq.html` — frequently asked questions
+- `symbols.html` — symbols and their interpretations
+- `glossary.html` — terms used on the site
+- `sources.html` — references and attribution notes
+- `style.css` — shared colors, layout, and styling
 
-Upload all nine files into the same directory in your Neocities site. Open `index.html` as the homepage. Every page links to the shared `style.css`, so keep the stylesheet beside the HTML files.
+## Run locally
 
-## Edit the look
+Download or clone the repository, then open `index.html` in a web browser. The site uses plain HTML and CSS and does not need a build step or external libraries.
 
-The color palette, maximum width, and column spacing are CSS variables at the top of `style.css`. Update those values to customize the site. The layout keeps three columns on wider screens and stacks the article before the sidebars on smaller screens.
+## Editing
 
-## Replace image panels
+Edit the HTML files to change the text and navigation. Edit the CSS variables near the top of `style.css` to adjust the colors, width, and spacing. Replace the marked image placeholders with your own images and descriptive alt text.
 
-Search the HTML files for `[MOON IMAGE HERE]` and `[SPAWNISM SYMBOL HERE]`. Replace each `.image-placeholder` block with your own `<img>` element, keeping the image file in this folder and giving it descriptive `alt` text. No external image host or script is required.
+## Sources and scope
 
-## Add information carefully
+The site links to community wikis as references. It aims to distinguish general descriptions from branch-specific accounts and personal interpretations. Check the linked source and label its scope before adding sourced information.
+## Writing and reuse
 
-The pages intentionally leave theology, history, practices, and symbols open where details were not supplied. Replace bracketed notes only when you have enough information. Label each addition as a broadly documented description, a branch or community account, a personal interpretation, or an external wiki account. Keep any controversial-group context separate from the general description.
+The original explanatory prose in this project may be reused under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with attribution.
+
+This applies only to my original writing. It does not cover the HTML/CSS,
+site design, or material from the linked sources. Please credit the relevant
+source when using source-derived information.
