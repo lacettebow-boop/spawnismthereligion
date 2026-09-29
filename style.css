@@ -227,20 +227,27 @@ a:focus-visible { outline: 2px dotted var(--accent); outline-offset: 3px; }
     padding: 10px;
   }
   .layout {
+    display: grid;
     grid-template-columns: 190px minmax(0, 1fr) 205px;
     grid-template-areas: "left main right";
-    padding: 12px;
+    align-items: start;
     gap: var(--column-gap);
+    padding: 12px;
   }
-  .left-sidebar,
-  .right-sidebar {
+  .left-sidebar {
+    grid-area: left;
     display: block;
   }
-  .site-title {
-    font-size: clamp(2.2rem, 7vw, 3.5rem);
+  .main-content {
+    grid-area: main;
+    min-width: 0;
   }
-  .article-card {
-    padding: 15px 16px 17px;
+  .right-sidebar {
+    grid-area: right;
+    display: block;
+  }
+  .panel {
+    margin: 0 0 11px;
   }
 }
 
